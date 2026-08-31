@@ -1,0 +1,67 @@
+/* =========================================
+   ESTILOS ESPECÍFICOS PARA EL LOGIN
+   ========================================= */
+:root {
+    --color-primario: #0056b3; /* Azul médico */
+    --color-secundario: #00a8cc; /* Celeste claro */
+    --color-fondo: #f4f7f6;
+    --color-texto: #333333;
+    --color-blanco: #ffffff;
+    --sombra-suave: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+.contenedor-login {
+    max-width: 400px;
+    margin: 10vh auto; /* Lo centra y le da un margen superior relativo a la pantalla */
+    background-color: var(--color-blanco);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: var(--sombra-suave);
+    border-top: 5px solid var(--color-primario);
+    text-align: center;
+}
+
+.contenedor-login h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-primario);
+}
+
+.form-grupo {
+    margin-bottom: 1.5rem;
+    text-align: left; /* Volvemos a alinear a la izquierda para los inputs */
+}
+
+.form-grupo label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--color-texto);
+}
+
+.form-grupo input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: inherit; /* Hereda la tipografía de la página */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto cuando el usuario hace clic adentro del input para escribir */
+.form-grupo input:focus {
+    outline: none;
+    border-color: var(--color-primario);
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.3);
+}
+
+.error-msj {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    font-size: 0.9rem;
+    display: none; /* Oculto por defecto, JS lo muestra si hay error */
+    margin-bottom: 1rem;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+}
